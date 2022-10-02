@@ -32,7 +32,7 @@ function result() {
   }
 
   if (document.getElementById("UK").checked) {
-    const weight = `${Math.round(200*0.0714286)} stone`;
+    const weight = `${Math.round(300*0.0714286)} stone`;
     const temperature =  `${Math.round((94-32) * 5 / 9)} centigrade`;
     newStory = newStory.replace('94 fahrenheit', temperature);
     newStory = newStory.replace('300 pounds', weight);
