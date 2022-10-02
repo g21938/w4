@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+const storyText = '今日は華氏94度だったので:insertx:は釣りに出かけました。彼らは:inserty:に行くと、喧嘩を始め、:insertz:のように戦った。 私は魚を食べたかったのに食べられませんでした。 —:insertx: はとてもメガネの似合う200ポンドのイケメンでした。';
 const insertX = ['sanji', 'taro', 'hally'];
 const insertY = ['desny', 'shshu', 'gijido'];
 const insertZ = ['chi-ta', 'nhono', 'kokku'];
@@ -32,10 +32,10 @@ function result() {
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = `${Math.round(300*0.0714286)} stone`;
+    const weight = `${Math.round(200*0.0714286)} stone`;
     const temperature =  `${Math.round((94-32) * 5 / 9)} centigrade`;
-    newStory = newStory.replace('94 fahrenheit', temperature);
-    newStory = newStory.replace('300 pounds', weight);
+    newStory = newStory.replace('華氏94度', temperature);
+    newStory = newStory.replace('200ポンド', weight);
   }
 
   story.textContent = newStory;
